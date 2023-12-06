@@ -1,0 +1,8 @@
+---
+- name: Working on tomcat
+  hosts: all
+  tasks:
+   - name: Start tomcat as a container
+     docker_container:
+      image: tomcat
+      name: mytomcat
